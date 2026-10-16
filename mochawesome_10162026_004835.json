@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2026-10-09T23:13:02.253Z",
-    "end": "2026-10-09T23:13:13.350Z",
-    "duration": 11097,
+    "start": "2026-10-16T00:48:24.954Z",
+    "end": "2026-10-16T00:48:35.841Z",
+    "duration": 10887,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ca89b528-e739-4778-b09d-23e47b6c460a",
+      "uuid": "0574c245-ae72-4e7c-8f39-be25305fc6c7",
       "title": "",
       "fullFile": "cypress/e2e/gui/logout.cy.js",
       "file": "cypress/e2e/gui/logout.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b9353850-d1d8-450a-b117-5b77ba1db4cf",
+          "uuid": "f5610fc6-cd30-4004-b533-65e323f75194",
           "title": "SauceDemo Logout Tests",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "should logout successfully and redirect to the login page",
               "fullTitle": "SauceDemo Logout Tests should logout successfully and redirect to the login page",
               "timedOut": null,
-              "duration": 5591,
+              "duration": 5451,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "_homePage.default.logout();\ncy.url().should('eq', 'https://www.saucedemo.com/');\ncy.get('[data-test=\"login-button\"]').should('be.visible');",
               "err": {},
-              "uuid": "0b45e486-4ab0-45dd-a615-ed1abef8df27",
-              "parentUUID": "b9353850-d1d8-450a-b117-5b77ba1db4cf",
+              "uuid": "e16a7673-9b63-456c-988d-8f49a8f51bff",
+              "parentUUID": "f5610fc6-cd30-4004-b533-65e323f75194",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "should not allow access to inventory after logging out",
               "fullTitle": "SauceDemo Logout Tests should not allow access to inventory after logging out",
               "timedOut": null,
-              "duration": 5438,
+              "duration": 5398,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "_homePage.default.logout();\n// Attempt to access a protected page directly after logout\ncy.visit('/inventory.html', {\n  failOnStatusCode: false\n});\ncy.url().should('not.include', '/inventory.html');",
               "err": {},
-              "uuid": "945d8c3e-3199-414f-abc1-a8806527fcbb",
-              "parentUUID": "b9353850-d1d8-450a-b117-5b77ba1db4cf",
+              "uuid": "3b275462-98ff-4b68-abab-ee62436aef4a",
+              "parentUUID": "f5610fc6-cd30-4004-b533-65e323f75194",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0b45e486-4ab0-45dd-a615-ed1abef8df27",
-            "945d8c3e-3199-414f-abc1-a8806527fcbb"
+            "e16a7673-9b63-456c-988d-8f49a8f51bff",
+            "3b275462-98ff-4b68-abab-ee62436aef4a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11029,
+          "duration": 10849,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
